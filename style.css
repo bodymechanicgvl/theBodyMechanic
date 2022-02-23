@@ -1,4 +1,27 @@
-body {background-color: #b9d8de;}
+/* color palette: #252929 charlston green #070605 sorta black */
+
+body {
+    background: #b9d8de;
+  }
+
+  #lineDrawing {
+      margin-top: 100px;
+  }
+
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 10s;
+    fill: #b9d8de;
+    stroke:#070605;
+    
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 3;
+    }
+  }
 
 .navbar-inner {
     text-align:center;}
