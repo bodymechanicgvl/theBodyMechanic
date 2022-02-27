@@ -2,26 +2,149 @@
 
 body {
     background: #b9d8de;
-  }
+    animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+}
 
-  #lineDrawing {
-      margin-top: 100px;
+.header {
+  display: flex;
+  justify-content: center;
+}
+   
+#svgMain {
+    width: 335px;
+    height: 350px;
+  }
+#svgText {
+  width: 1144px;
+  height:auto;
+}
+
+  #splashContainer {
+    margin-top: 100px;
+    height: 400px;
   }
 
   .path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 10s;
-    fill: #b9d8de;
-    stroke:#070605;
-    
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash 5s linear alternate infinite;
   }
+
+  #logoText {
+    display: flex;
+    justify-content: center;
+  }
+  #logoTextImage {
+  animation: fadeIn 7s;
+  animation-delay: 15s;
+  -webkit-animation: fadeIn 7s;
+  -moz-animation: fadeIn 7s;
+  -o-animation: fadeIn 7s;
+  -ms-animation: fadeIn 7s;
+}
+
+  #enterBtn {
+    border-radius: 10px;
+    background-color: #252929;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #enterBtn:hover {opacity: 1}
+#enterBtnContainer {
+  animation: fadeIn 15s;
+  animation-duration: 15s;
+    -webkit-animation: fadeIn 15s;
+    -moz-animation: fadeIn linear 15s;
+    -o-animation: fadeIn linear 15s;
+    -ms-animation: fadeIn linear 15s;
+    transition: all 15s linear ease-in;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
   
   @keyframes dash {
+    from {
+      stroke-dashoffset: 1;
+    }
     to {
-      stroke-dashoffset: 3;
+      stroke-dashoffset: 0;
     }
   }
 
-.navbar-inner {
-    text-align:center;}
+#navbar {
+  display: flex;
+  /* justify-content: space-between; */
+}
+ 
+#navlogotext {
+  justify-content: center;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#logo{
+  float: left;
+  width: 1em;
+  padding: 10px;
+}
+
+#menu {
+  float: right;
+  padding: 10px;
+}
+

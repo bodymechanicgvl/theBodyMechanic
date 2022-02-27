@@ -1,9 +1,13 @@
-// anime({
-//     // targets: '.namedview7 .lines path',
-//     strokeDashoffset: [anime.setDashoffset, 10],
-//     easing: 'easeInOutSine',
-//     duration: 10000,
-//     delay: function(el, i) { return i * 25 },
-//     direction: 'alternate',
-//     loop: false
-//   });
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
