@@ -11,77 +11,19 @@
 </head>
 <body>
 
-<!-- header -->  
-  <div class="header">
-    <img src="./images/theBodyMechanic.png" alt="" width="" height="" id= "navlogotext" class="d-inline-block align-text-top align-text-center">
-  </div>
-
-<!-- navbar -->
-
- <nav id="navbar" class="navbar-light bg-transparent">
-     <div class="container-fluid">
-      <div class="navbar-brand" href="#">
-        <img src="./images/logoOnly.png" alt="" id="logo" width="100" height="100" id="logoOnly" class="d-inline-block align-text-top">
-      </div>
-      
-      <button id="menuBtn" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon" id="hamburgerBtn"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+    <div id="splashContainer" style="text-align: center;">
+      <svg id="svgMain">
+        <path class="path" fill="#b9d8de" stroke="#070605" stroke-width="2" opacity=".5" viewbox="0 0 350 300"d="m 131.16219,56.764437 c 0.37065,-14.322453 5.58255,-22.15516 7.63053,-23.918312 2.7841,-2.396906 5.81399,-4.916044 8.20746,-6.421721 4.628,-2.9112 9.023,-5.984 13,-9.4954 2.305,-2.0354 4.604,-4.8858 8,-4.1782 6.247,1.3013 10.507,7.9562 16,11.5532 6.477,4.2416 12.574,7.3129 16.08,14.696 1.078,2.2697 1.647,4.7986 2.115,6.9985 0.646,3.0322 1.104,4.9302 1.805,7.0015 4.975,-2.4296 10.464,-7.2523 20,-7.9089 7.529,-0.5185 14.628,2.6268 22,3.6203 4.801,0.6471 9.994,-0.2068 13.682,2.3125 2.697,1.8423 2.31,5.7702 2.318,8.9761 0.025,10.031 4.033,21.178456 2.546,31 -1.60528,4.633002 -4.13196,9.039686 -7.04581,12.700076 C 254.92169,106.93918 255,107 255,107 M 72.33771,188.56738 c 2.490559,-3.18269 2.990431,-5.10478 7.255844,-9.41692 0,0 -4.15204,0.37773 -6.188849,0.18194 C 70.998262,179.10109 68.117362,178.73732 67,178.251 58.743,175.489 53.9171,169.933 49.6111,163 45.5529,156.466 40.1094,152.353 36.662,146 c -2.1326,-3.93 0.7846,-6.183 3.267,-9 5.4128,-6.142 10.8672,-17.259 17.1111,-22.671 3.0953,-2.683 8.4889,-5.449 11.9591,-6.135 4.785401,-0.71621 13.793233,0.22568 5.294987,-7.67286 C 71.79771,96.730198 69.3403,92.8571 68.6188,89 66.912,79.8753 71.1648,68.1056 72.4236,59 72.7805,56.4187 71.318797,50.965337 73.238097,49.374737 76.665597,46.534337 83.1942,49.3429 88,48.7106 c 2.92487,-0.384774 5.801993,-1.113907 8.678927,-1.822008 1.884779,-0.463901 3.774853,-0.890248 5.667463,-1.261878 2.69529,-0.529243 6.83395,-1.023197 11.45288,-0.543163 2.8901,0.300361 10.82695,5.963211 17.36292,11.680886 M 112,199 c -2.873,-3.54 -5.156,-6.087 -8.101,-10 C 92.1015,173.324 87.736,154.655 89.0895,135 90.4045,115.904 101.617,96.5627 116,84.439 c 16.66,-14.0434 35.402,-18.9536 57,-18.4244 10.083,0.2471 20.083,3.2862 29,7.7446 8.571,4.2856 16.416,10.1913 22.907,17.2408 3.989,4.3329 6.875,8.7087 9.781,14 6.516,11.865 10.467,26.248 10.293,40 -0.247,19.649 -10.082,39.337 -21.981,53 m -87,-12 c -5.268,-4.293 -9.385,-8.504 -12.91,-14 -7.42,-11.57 -10.539,-26.21 -7.19,-40 2.125,-8.752 7.07,-17.47 13.274,-23.91 7.371,-7.653 18.356,-13.7136 28.826,-15.2196 10.667,-1.5343 20.335,-0.5777 30,3.5586 6.111,2.6154 11.529,6.114 15.91,10.611 14.747,15.14 19.386,39.61 10.308,58.96 -3.747,7.987 -8.405,14.198 -15.218,19 m -35.999,-78.258 c 6.601,-2.524 14.238,2.36 15.275,9.258 0.428,2.842 -0.557,5.212 0.362,7.83 3.381,9.635 11.788,15.205 11.258,27.17 -0.333,7.519 -2.803,14.167 -7.177,20 -1.525,2.034 -2.997,3.532 -3.538,6 -0.542,2.468 0.032,4.627 1.044,6.999 5.954,13.946 25.64,9.844 34.122,22.005 3.228,4.627 3.625,10.343 3.652,15.996 0.068,13.964 4.488,38.227 -3.652,49.999 -6.034,8.728 -22.575,18.55 -32.347,21.893 -7.562,2.587 -9.483,-2.255 -16,-1.428 -3.761,0.477 -5.941,2.619 -10,2.311 -4.099,-0.311 -7.56,-2.496 -11,-4.587 C 135.925,284.673 123.696,279.359 118.367,270 115.59,265.123 116,259.642 116,254 c 0,-12.817 -3.645,-32.386 1.367,-44 1.371,-3.176 3.171,-5.543 5.676,-7.786 9.56,-8.558 30.711,-7.136 31.663,-23.214 0.352,-5.947 -9.19,-15.228 -10.377,-22 -2.559,-14.592 5.739,-20.206 10.068,-32 1.021,-2.783 0.39,-5.134 0.712,-8 0.506,-4.508 3.485,-8.573 7.892,-10.258 M 255,107 c 3.89478,0.18082 11.215,-0.56314 19,4.88286 6.152,4.303 10.645,12.89414 15.428,19.11714 2.758,3.587 7.707,7.59 8.107,12 0.415,4.575 -5.276,9.046 -8.299,13 -4.156,5.437 -5.943,10.362 -10.341,14.957 -7.286,7.613 -15.828,8.132 -20.895,10.043 2.694,5.137 7.355,11.31 7.424,21 0.047,6.504 -2.863,12.574 -3.334,19 -0.361,4.927 1.329,12.167 -1.832,15.397 -2.06,2.104 -5.314,1.566 -8.258,1.607 -8.461,0.118 -16.661,2.919 -25,3.996 m -71,-65 c 7.412,0.646 14.54,0.609 22,0 M 72.33771,188.56738 c -1.250157,2.29957 -2.338835,4.92769 -3.23281,8.43262 -0.464023,4.72285 -0.261197,9.54245 0.715511,14.69018 0.981149,5.17115 1.824778,10.41254 2.461189,15.30982 0.414027,3.186 0.0568,7.27 1.7462,9.397 1.7305,2.178 5.1099,1.542 7.9722,1.618 8.1031,0.215 16.0427,2.815 24,3.985 m 56,-34 c 3.239,10.928 7.144,12.89 11,0 7.895,6.612 3.025,10.768 -0.976,19 -2.424,4.988 -1.024,12.411 -1.024,18 0,3.423 1.521,14.364 -3.961,14.364 -4.596,0 -3.039,-10.432 -3.039,-13.364 0,-5.295 1.329,-13.02 -0.603,-17.83 C 160.898,221.947 151.064,213.739 162,208 m 39,25 c -5.723,13.953 -7,26.757 -7,42 m -61,-41 c 6.139,11.698 7,26.632 7,40 m 52,34 c -3.109,2.836 -7.862,5.948 -11,7.938 -2.143,1.359 -3.891,3.1 -7,3.914 -4.615,1.207 -7.793,0.75 -13,1.586 -18.205,2.926 -48.214,10.467 -66,3.415 -8.7472,-3.469 -12.8393,-12.957 -6.6057,-20.838 2.4092,-3.046 5.2205,-5.166 8.6057,-7.138 8.323,-4.851 18.312,-6.998 28,-8.877 m 86,1 c 12.063,0.519 30.02,6.219 35.86,17.001 3.369,6.22 1.185,14.819 -5.864,18.029 -12.219,5.564 -28.118,3.666 -40.996,2.125 -4.637,-0.555 -12.909,-1.799 -16.998,-2.773 -3.668,-0.873 -5.259,-2.114 -7.002,-3.382"pathLength="1.5" /> 
+      </svg>     
     </div>
-  </nav>  
 
-  
-  <div class="content">
-    <h3>Sticky Navigation Example</h3>
-    <p>The navbar will stick to the top when you reach its scroll position.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  </div>
+    <div id="logoText">
+      <img src="./images/theBodyMechanic.png" alt="the Body Mechanic" id="logoTextImage">
+    </div>
+
+    <div id="enterBtnContainer" style="text-align: center; margin-top: 50px;">
+      <a href="./home.html" id="enterBtn">ENTER</a>
+    </div>
 
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<script src="./index.js"></script>
-
 </html>
-
-  
