@@ -3,8 +3,11 @@
 @font-face {
   font-family: "Maharlika-Regular";
       src: url('./fonts/Maharlika-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: "Belleza-Regular";
-      src: url('./fonts/Belleza-Regular.ttf') format ('truetype');
+  src: url('./fonts/Belleza-Regular.ttf') format ('truetype');
 }
 
 body {
@@ -21,6 +24,15 @@ body {
             100% {
                 opacity: 1;
             }
+}
+
+p {
+  font-family: 'Belleza-Regular';
+}
+
+.btn-link, .btn-link:visited, .btn-link:hover {
+  color:#252929;
+  text-decoration: none;
 }
 
 .header {
@@ -96,6 +108,12 @@ body {
     -o-animation: fadeIn linear 15s;
     -ms-animation: fadeIn linear 15s;
     transition: all 15s linear ease-in;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes fadeIn {
