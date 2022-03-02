@@ -1,7 +1,15 @@
 /* color palette: #252929 charlston green #070605 sorta black */
 
+@font-face {
+  font-family: "Maharlika-Regular";
+      src: url('./fonts/Maharlika-Regular.ttf') format('truetype');
+  font-family: "Belleza-Regular";
+      src: url('./fonts/Belleza-Regular.ttf') format ('truetype');
+}
+
 body {
-    background: #b9d8de;
+    background: #a6c4c9;
+    font-family: 'Belleza-Regular';
     animation: fadeInAnimation ease 3s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
@@ -44,13 +52,22 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  #logoTextBox {
+    display: flex;
+    justify-content: center;
+  }
   #logoTextImage {
-  animation: fadeIn 7s;
-  animation-delay: 15s;
-  -webkit-animation: fadeIn 7s;
-  -moz-animation: fadeIn 7s;
-  -o-animation: fadeIn 7s;
-  -ms-animation: fadeIn 7s;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 7s;
+    animation-delay: 15s;
+    -webkit-animation: fadeIn 7s;
+    -moz-animation: fadeIn 7s;
+    -o-animation: fadeIn 7s;
+    -ms-animation: fadeIn 7s;
 }
 
   #enterBtn {
@@ -60,6 +77,7 @@ body {
     color: white;
     padding: 16px 32px;
     text-align: center;
+    font-family: 'Maharlika-Regular';
     font-size: 16px;
     margin: 4px 2px;
     opacity: 0.6;
@@ -151,14 +169,14 @@ body {
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #a6c4c9;
 }
 
 /* Navbar links */
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #252929;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -166,7 +184,7 @@ body {
 
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 0px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -178,5 +196,5 @@ body {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 40px;
 }

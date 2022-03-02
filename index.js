@@ -11,3 +11,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
