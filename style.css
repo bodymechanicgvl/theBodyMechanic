@@ -1,5 +1,6 @@
 /* color palette: #252929 charlston green #070605 sorta black */
 
+/* fonts */
 @font-face {
   font-family: "Maharlika-Regular";
       src: url('./fonts/Maharlika-Regular.ttf') format('truetype');
@@ -30,6 +31,7 @@ p {
   font-family: 'Belleza-Regular';
 }
 
+/* navbar button styling */
 .btn-link, .btn-link:visited, .btn-link:hover {
   color:#252929;
   text-decoration: none;
@@ -151,8 +153,15 @@ p {
   }
 
 #navbar {
+  font-size: large;
   display: flex;
-  /* justify-content: space-between; */
+  margin: 40px;
+  justify-content: space-between;
+}
+
+#menuBtn {
+  margin-top: 20px;
+  justify-content: baseline;
 }
  
 #navlogotext {

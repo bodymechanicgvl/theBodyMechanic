@@ -12,6 +12,7 @@ function myFunction() {
   }
 }
 
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+$('.li-modal').on('click', function(e){
+  e.preventDefault();
+  $('#staticBackdrop').modal('show').find('.modal-content').load($(this).attr('href'));
+});
