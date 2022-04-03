@@ -155,7 +155,7 @@ p {
 #navbar {
   font-size: large;
   display: flex;
-  margin: 35px;
+  margin: 10px;
   justify-content: space-between;
 }
 
