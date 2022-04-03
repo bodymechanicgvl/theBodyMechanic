@@ -265,7 +265,7 @@ p {
 /* Slides */
 .mySlides {
   display: none;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -273,11 +273,10 @@ p {
 .prev, .next {
   /* display: none; */
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: top;
   width: auto;
-  margin-top: -30px;
-  padding: 16px;
+  
+  
   color: #a6c4c9;
   font-weight: bold;
   font-size: 20px;
@@ -291,6 +290,10 @@ p {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  display: none;
 }
 
 /* On hover, add a black background color with a little bit see-through */
