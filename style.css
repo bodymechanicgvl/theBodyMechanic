@@ -155,7 +155,7 @@ p {
 #navbar {
   font-size: large;
   display: flex;
-  margin: 40px;
+  margin: 35px;
   justify-content: space-between;
 }
 
@@ -178,9 +178,9 @@ p {
   width: 100;
 }
 
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 60px;
-}
+} */
 
 #logo{
   float: left;
@@ -219,6 +219,16 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.bg {
+  background-image: url('./images/oceanic.jpeg');
+  height: 800px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
