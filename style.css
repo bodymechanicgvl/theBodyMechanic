@@ -271,7 +271,7 @@ p {
 
 /* Next & previous buttons */
 .prev, .next {
-  /* display: none; */
+  display: none;
   cursor: pointer;
   position: top;
   width: auto;
