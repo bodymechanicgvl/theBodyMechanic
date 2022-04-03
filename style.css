@@ -339,11 +339,23 @@ q {font-style: italic;}
 .author {color: #a6c4c9;}
 
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 470px) {
 
    #logoText {
-     max-width: 60%;
+     display:none;
    }
+}
+
+@media only screen and (min-width: 471px) {
+    #logoText2 {
+      display:none;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+  #logoText2 {
+    display:none;
+  }
 }
 
 @media only screen and (max-width: 380px) and (height: 667px) {
